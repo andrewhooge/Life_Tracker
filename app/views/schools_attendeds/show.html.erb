@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>School:</strong>
+  <%= @schools_attended.school %>
+</p>
+
+<p>
+  <strong>Beginning year:</strong>
+  <%= @schools_attended.beginning_year %>
+</p>
+
+<p>
+  <strong>Ending year:</strong>
+  <%= @schools_attended.ending_year %>
+</p>
+
+<%= link_to 'Edit', edit_schools_attended_path(@schools_attended) %> |
+<%= link_to 'Back', schools_attendeds_path %>

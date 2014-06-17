@@ -1,0 +1,29 @@
+<h1>Listing schools_attendeds</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>School</th>
+      <th>Beginning year</th>
+      <th>Ending year</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @schools_attendeds.each do |schools_attended| %>
+      <tr>
+        <td><%= schools_attended.school %></td>
+        <td><%= schools_attended.beginning_year %></td>
+        <td><%= schools_attended.ending_year %></td>
+        <td><%= link_to 'Show', schools_attended %></td>
+        <td><%= link_to 'Edit', edit_schools_attended_path(schools_attended) %></td>
+        <td><%= link_to 'Destroy', schools_attended, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Schools attended', new_schools_attended_path %>
