@@ -11,14 +11,6 @@ This program is designed to help someone track their educational history.
 
 
 * How to run the test suite
-- 
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+- Pull Life_Tracker from the Repo
+- CD in to the file from your terminal
+- Type Rails Server and use http://0.0.0.0:3000 to view
