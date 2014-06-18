@@ -1,8 +1,8 @@
 == README
 
-#School Record Creator
+# School Record Creator
 
-##Overview
+## Overview
 This program is designed to help someone track their educational history.
 
 ## Details
