@@ -1,0 +1,18 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @person.name %>
+</p>
+
+<ul>
+  <% @person.schools_attended.order('beginning_year').each do |school| %>
+    <li>
+      <%= school.name %> |
+      <%= school.beginning_year %>
+    </li>
+  <% end %>
+</ul>
+
+<%= link_to 'Edit', edit_person_path(@person) %> |
+<%= link_to 'Back', people_path %>

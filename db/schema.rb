@@ -11,14 +11,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140617193402) do
+ActiveRecord::Schema.define(version: 20140618201819) do
 
   create_table "life_events", force: true do |t|
     t.string   "event"
     t.string   "year"
-    t.string   "ending_year"
     t.string   "description"
-    t.string   "string"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "people", force: true do |t|
+    t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
