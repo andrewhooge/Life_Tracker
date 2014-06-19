@@ -14,12 +14,12 @@
   <tbody>
     <% @schools_attendeds.each do |school| %>
       <tr>
-        <td><%= school_attendeds.person.merg %></td>
-        <td><%= school_attendeds.school %></td>
-        <td><%= school_attendeds.beginning_year %></td>
-        <td><%= school_attendeds.ending_year %></td>
+        <td><%= school.person %></td>
+        <td><%= school.school %></td>
+        <td><%= school.beginning_year %></td>
+        <td><%= school.ending_year %></td>
         <td><%= link_to 'Show', school %></td>
-        <td><%= link_to 'Edit', edit_school_path(school) %></td>
+        <td><%= link_to 'Edit', edit_schools_attended_path(school) %></td>
         <td><%= link_to 'Destroy', school, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
@@ -28,5 +28,5 @@
 
 <br>
 
-<%= link_to 'New School', new_school_path %>
+<%= link_to 'New School', new_schools_attended_path %>
 </body>
