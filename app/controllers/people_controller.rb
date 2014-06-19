@@ -10,6 +10,8 @@ class PeopleController < ApplicationController
   # GET /people/1
   # GET /people/1.json
   def show
+    @schools_attended = @person.schools_attended
+    @life_event = @person.life_events
   end
 
   # GET /people/new
