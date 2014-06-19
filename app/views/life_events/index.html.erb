@@ -4,21 +4,17 @@
   <thead>
     <tr>
       <th>Event</th>
-      <th>Year</th>
-      <th>Description</th>
       <th colspan="3"></th>
     </tr>
   </thead>
 
   <tbody>
-    <% @life_events.each do |life_event| %>
+    <% @life_event.each do |event| %>
       <tr>
-        <td><%= life_event.event %></td>
-        <td><%= life_event.year %></td>
-        <td><%= life_event.description %></td>
-        <td><%= link_to 'Show', life_event %></td>
-        <td><%= link_to 'Edit', edit_life_event_path(life_event) %></td>
-        <td><%= link_to 'Destroy', life_event, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= life_event.name %></td>
+        <td><%= link_to 'Show', person %></td>
+        <td><%= link_to 'Edit', edit_person_path(person) %></td>
+        <td><%= link_to 'Destroy', person, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>

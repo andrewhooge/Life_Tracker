@@ -1,19 +1,24 @@
 <p id="notice"><%= notice %></p>
 
 <p>
+  <strong>Name:</strong>
+  <%= @school_attended.person.merg %>
+</p>
+
+<p>
   <strong>School:</strong>
-  <%= @schools_attended.school %>
+  <%= @school_attended.school_name %>
 </p>
 
 <p>
   <strong>Beginning year:</strong>
-  <%= @schools_attended.beginning_year %>
+  <%= @school_attended.beginning_year %>
 </p>
 
 <p>
   <strong>Ending year:</strong>
-  <%= @schools_attended.ending_year %>
+  <%= @school.ending_year %>
 </p>
 
-<%= link_to 'Edit', edit_schools_attended_path(@schools_attended) %> |
-<%= link_to 'Back', schools_attendeds_path %>
+<%= link_to 'Edit', edit_school_path(@school_attended) %> |
+<%= link_to 'Back', schools_path %>

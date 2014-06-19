@@ -3,6 +3,7 @@
 <table>
   <thead>
     <tr>
+      <th>Name</th>
       <th>School</th>
       <th>Beginning year</th>
       <th>Ending year</th>
@@ -11,14 +12,15 @@
   </thead>
 
   <tbody>
-    <% @schools_attendeds.each do |schools_attended| %>
+    <% @schools_attendeds.each do |school| %>
       <tr>
-        <td><%= schools_attended.school %></td>
-        <td><%= schools_attended.beginning_year %></td>
-        <td><%= schools_attended.ending_year %></td>
-        <td><%= link_to 'Show', schools_attended %></td>
-        <td><%= link_to 'Edit', edit_schools_attended_path(schools_attended) %></td>
-        <td><%= link_to 'Destroy', schools_attended, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= school_attendeds.person.merg %></td>
+        <td><%= school_attendeds.school %></td>
+        <td><%= school_attendeds.beginning_year %></td>
+        <td><%= school_attendeds.ending_year %></td>
+        <td><%= link_to 'Show', school %></td>
+        <td><%= link_to 'Edit', edit_school_path(school) %></td>
+        <td><%= link_to 'Destroy', school, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -26,4 +28,5 @@
 
 <br>
 
-<%= link_to 'New Schools attended', new_schools_attended_path %>
+<%= link_to 'New School', new_school_path %>
+</body>
